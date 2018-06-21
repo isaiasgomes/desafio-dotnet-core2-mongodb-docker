@@ -1,0 +1,11 @@
+services:
+  cadastro.api:
+    build:
+      context: C:\Users\IsaÝas\source\repos\Cadastro.Solution
+      dockerfile: Cadastro.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: cadastroapi
+    ports:
+    - 80/tcp
+version: '3.0'

@@ -1,0 +1,11 @@
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\bin\Release\netcoreapp2.0\Cadastro.API.deps.json
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\bin\Release\netcoreapp2.0\Cadastro.API.runtimeconfig.json
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\bin\Release\netcoreapp2.0\Cadastro.API.runtimeconfig.dev.json
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\bin\Release\netcoreapp2.0\Cadastro.API.dll
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\bin\Release\netcoreapp2.0\Cadastro.API.pdb
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\obj\Release\netcoreapp2.0\Cadastro.API.csproj.CoreCompileInputs.cache
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\obj\Release\netcoreapp2.0\Cadastro.API.AssemblyInfoInputs.cache
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\obj\Release\netcoreapp2.0\Cadastro.API.AssemblyInfo.cs
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\obj\Release\netcoreapp2.0\Cadastro.API.dll
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\obj\Release\netcoreapp2.0\Cadastro.API.pdb
+C:\Users\Isaías\source\repos\Cadastro.Solution\Cadastro.API\obj\Release\netcoreapp2.0\Cadastro.API.csprojAssemblyReference.cache

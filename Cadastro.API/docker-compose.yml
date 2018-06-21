@@ -1,0 +1,18 @@
+version: '3'
+services:
+  meu-mongo:
+    image: mongo
+    networks: 
+      - minha-rede
+  webapi:
+    image: isaiasgomes/apicadastro-rest
+    container_name: webapi-1
+    ports:
+      - 5000:5000
+    networks: 
+      - minha-rede
+    depends_on:
+      - meu-mongo
+networks: 
+  minha-rede:
+    driver: bridge
