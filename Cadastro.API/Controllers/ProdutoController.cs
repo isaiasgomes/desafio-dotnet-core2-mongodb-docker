@@ -24,7 +24,7 @@ namespace Cadastro.API.Controllers
 
         [NoCache]
         [HttpGet]
-        [EnableQuery]//FALTA IMPLEMENTAR PAGINACAO
+        [EnableQuery]
         public async Task<IEnumerable<Produto>> Get()
         {
             return await _produtoRepository.GetAllProdutos();
