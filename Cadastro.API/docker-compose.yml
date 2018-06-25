@@ -5,7 +5,7 @@ services:
     networks: 
       - minha-rede
   webapi:
-    image: isaiasgomes/apicadastro-rest
+    image: isaiasgomes/cadastroapi-v2
     container_name: webapi-1
     ports:
       - 5000:5000

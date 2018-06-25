@@ -30,14 +30,18 @@ namespace Cadastro.API.Model
         [BsonElement("Marca")]
         public string Marca { get; set; }
 
-        
         [BsonElement("Categoria")]
-        public  Categoria Categoria { get; set; }
+        public  string Categoria { get; set; }
+
+        
+            //[BsonElement("Categoria")]
+            //public  Categoria Categoria { get; set; }
     }
 
     public class Categoria
     {
-        public ObjectId _id { get; set; }
+        
+        public ObjectId InternalId { get; set; }
 
         [BsonElement("Codigo")]
         public string Codigo { get; set; }

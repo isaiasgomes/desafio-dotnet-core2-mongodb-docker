@@ -35,15 +35,31 @@ namespace Cadastro.API.Data
 
         public async Task<IEnumerable<Produto>> GetAllProdutos()
         {
+            
             try
             {
                 return await _context.Produtos.Find(_ => true).ToListAsync();
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.StackTrace);
+                Console.WriteLine(ex.Message);
                 throw ex;
             }
         }
+
+
+        public async Task<IEnumerable<Produto>> Pagination(int top, int skip, bool ascending)
+        {
+            var query = _context.Produtos.Find(e => true).Skip(skip).Limit(top);
+
+            if (ascending)
+                return await query.SortBy(p => p.Codigo).ToListAsync();
+            else
+                return await query.SortByDescending(p => p.Codigo).ToListAsync();
+        }
+
+
 
         public async Task<Produto> GetProduto(string codigo)
         {
@@ -161,5 +177,6 @@ namespace Cadastro.API.Data
             return internalId;
         }
 
+      
     }
 }

@@ -31,6 +31,15 @@ namespace Cadastro.API.Controllers
         }
 
 
+        [NoCache]
+        [HttpGet]
+        [Route("pagination")]
+        public async Task<IEnumerable<Produto>> Get(int top, int skip, bool ascending)
+        {
+            return await _produtoRepository.Pagination(top, skip, ascending);
+        }
+
+
         [HttpGet("{codigo}")]
         public async Task<Produto> Get(string codigo)
         {

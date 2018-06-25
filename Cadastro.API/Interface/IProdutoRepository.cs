@@ -23,5 +23,8 @@ namespace Cadastro.API.Interface
         Task<bool> RemoveAllProdutos();
 
         Task<string> CreateIndex();
+
+        Task<IEnumerable<Produto>> Pagination(int top, int skip, bool ascending);
+
     }
 }

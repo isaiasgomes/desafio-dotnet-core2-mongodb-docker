@@ -23,7 +23,36 @@ namespace Cadastro.API.Data
         {
             get
             {
+                //var collection = _database.GetCollection<Produto>("Produto");
+
+                //int currentPage = 1, pageSize = 2;
+
+                //double totalDocuments =  collection.Count(FilterDefinition<Produto>.Empty);
+
+                //var totalPages = Math.Ceiling(totalDocuments / pageSize);
+
+                //IMongoCollection<Produto> Result = null;
+
+                //for (int i = 1; i <= totalPages; i++)
+                //{
+                //    //int count = 1;
+                //    Result = (IMongoCollection<Produto>)collection.Find(FilterDefinition<Produto>.Empty)
+                //        .Skip((currentPage - 1) * pageSize)
+                //        .Limit(pageSize);
+
+                //}
+
+
                 return _database.GetCollection<Produto>("Produto");
+
+            }
+        }
+
+        public IMongoCollection<Categoria> Categorias
+        {
+            get
+            {
+                return _database.GetCollection<Categoria>("Categor");
             }
         }
     }
